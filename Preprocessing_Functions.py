@@ -70,6 +70,7 @@ def preprocess_one_img(path:str,save_path:str):
     
     f_savepath = save_path + '/'+filename
     crop = cv2.cvtColor(crop, cv2.COLOR_RGB2BGR) 
+    crop = cv2.resize(crop, (224, 224,3))
     cv2.imwrite(f_savepath,crop)
     
     return_dict ={'save_path':f_savepath}
