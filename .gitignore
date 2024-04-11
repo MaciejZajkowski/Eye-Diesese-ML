@@ -1,2 +1,4 @@
 
 *.jpeg
+/__pycache__
+*.csv
